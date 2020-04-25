@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-	<title>Prato</title>
+	<title>prato</title>
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
@@ -20,8 +20,8 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-expand-md fixed-top navbar-fixed-js">
-			<div class="container-nav">
+		<nav class="navbar navbar-expand-md fixed-top navbar-fixed-js" id="nav">
+			<div class="container">
 				<div class="main-brand">
 					<a class="navbar-brand" href="index.html">
 						<img id="iso" src="assets/img/logo-header.png" alt="" />
@@ -33,73 +33,104 @@
 				<div class="navbar-collapse offcanvas-collapse">
 					<ul class="navbar-nav m-auto">
 						<li class="nav-item ">
-							<a class="nav-link  " href="#">Acerca del PROYECTO</a>
+							<a class="nav-link  " href="#acerca">Acerca del PROYECTO</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link " href="#ZONASCOMUNES">ZONAS COMUNES</a>
+							<a class="nav-link " href="#zonas-comunes">ZONAS COMUNES</a>
 
 						</li>
 						<li class="nav-item">
-							<a class="nav-link " href="#GALERÍAEXTERIOR">GALERÍA EXTERIOR</a>
+							<a class="nav-link " href="#galeria-exterior">GALERÍA EXTERIOR</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link " href="#PLANOSDELPROYECTO">PLANOS DEL PROYECTO</a>
+							<a class="nav-link " href="#planos">PLANOS DEL PROYECTO</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link " href="#galeriaapartamento">galería apartamento</a>
+							<a class="nav-link " href="#galeria-apto">galería apartamento</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#UBICACIÓN">UBICACIÓN</a>
+							<a class="nav-link" href="#ubicacion">UBICACIÓN</a>
 						</li>
-						<li class="nav-item ml-6">
-							<a class="nav-link" href="#UBICACIÓN"><img src="assets/img/iconos/fb_2.png" alt=""></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#UBICACIÓN"><img src="assets/img/iconos/instagram_2.png"
-									alt=""></a>
-						</li>
+					
 					</ul>
+				
 				</div>
+			</div>
+			<div class="social-icons">
+				<li class="nav-item ">
+					<a class="nav-link" href="#"><img src="assets/img/iconos/fb_2.png" alt=""></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#"><img src="assets/img/iconos/instagram_2.png" alt=""></a>
+				</li>
 			</div>
 		</nav>
 	</header>
 
 	<!-- banner -->
-	<section class="banner">
-		<div class="main-banner">
-			<div class="main-banner__img">
-				<img src="assets/img/banner.png" alt="">
+	<section class="banner p-0">
+
+		<div class="main-banner__content">
+			<div class="main-banner__items">
+				<div class="main-banner">
+					<div class="main-banner__img">
+						<img src="assets/img/banner.png" alt="">
+					</div>
+					<div class="main-banner__text">
+						<p>Prato <br>APARTAMENTOS</p>
+						<hr>
+						<span>Ubicación</span>
+						<p>LOMA DE SAN JOSE, <br> SABANETA</p>
+						<span>Área </span>
+						<p>Área
+							70 m² hasta 87 m²</p>
+						<span>Desde </span>
+						<div class="price">
+							<p>$323.601.608
+								<br>
+								<small>Valor impuestos incluido*</small>
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="main-banner__text">
-				<p>Prato <br>APARTAMENTOS</p>
-				<hr>
-				<span>Ubicación</span>
-				<p>LOMA DE SAN JOSE, <br> SABANETA</p>
-				<span>Área </span>
-				<p>Área
-					70 m² hasta 87 m²</p>
-				<span>Desde </span>
-				<div class="price">
-					<p>$323.601.608
-						<br>
-						<small>Valor impuestos incluido*</small>
-					</p>
+			<div class="main-banner__items">
+				<div class="main-banner">
+					<div class="main-banner__img">
+						<img src="assets/img/banner.png" alt="">
+					</div>
+					<div class="main-banner__text">
+						<p>Prato <br>APARTAMENTOS</p>
+						<hr>
+						<span>Ubicación</span>
+						<p>LOMA DE SAN JOSE, <br> SABANETA</p>
+						<span>Área </span>
+						<p>Área
+							70 m² hasta 87 m²</p>
+						<span>Desde </span>
+						<div class="price">
+							<p>$323.601.608
+								<br>
+								<small>Valor impuestos incluido*</small>
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="dropdown_aroow">
-			<img src="assets/img/dropdown.png" alt="">
+		<a href="#acerca">	<img src="assets/img/dropdown.png" alt=""></a>
 		</div>
 	</section>
 	<!-- form -->
-	<section>
+	<section id="form_1" class=" p-0">
 		<div class="content-form">
 			<div class="form__item">
 				<p>Te llamamos para darte <br> <span>una asesoría completa</span></p>
 			</div>
 			<div class="form__item">
 				<form action="#">
-					<div class="row">
+					<div class="row form-w">
 						<div class="col-md-6">
 							<div class="row form-group">
 								<div class="col-md-12 mb-3 mb-md-0">
@@ -116,7 +147,7 @@
 
 							</div>
 
-							<div class="row form-group">
+							<div class="row form-group mb-0">
 								<div class="col-md-12 mb-3 mb-md-0">
 									<input type="text" id="fname" class="form-control " placeholder="Email" />
 								</div>
@@ -138,9 +169,9 @@
 								<label class="custom-control-label" for="customCheck">Acepto politicas y
 									privacidad</label>
 							</div>
-							<div class="row form-group">
+							<div class="row form-group mb-0">
 								<div class="col-md-12 text-center">
-									<input type="submit" value="Enviar " class="btn btn-black btn-form " />
+									<input type="submit" value="Enviar " class="btn btn-black btn-form btn-w" />
 								</div>
 							</div>
 						</div>
@@ -153,8 +184,8 @@
 	</section>
 
 	<!-- Acerca de.... -->
-	<section>
-		<div class="main-about">
+	<section id="acerca">
+		<div class="main-about container">
 			<div class="main-about__item">
 				<img src="assets/img/about.png" alt="">
 			</div>
@@ -165,22 +196,15 @@
 
 				<div class="h-5">
 					<p>
-						Ubicado en el municipio de Sabaneta, Antioquia, sector Loma de San José, zona de alta
-						valorización, facilidad de acceso por diferentes vías, en una reserva natural que te entregará
-						toda la tranquilidad que necesitas.
-						<br><br>
-						D 24 pisos de apartamentos, 6 apartamentos por piso: 3 aptos de 75.00, 3 aptos de 70.00, para un
-						total de 144 apartamentos.
-						<br><br>
-						En total el proyecto quedara conformado por 288 apartamentos, además contara con 6 niveles de
-						parqueaderos, 288 parqueaderos privados y 48 parqueaderos visitantes.
-						<br><br>
-
+						La ciudadela Toscana se encuentra ubicada en la Loma de San José, con fácil acceso, cercano a
+						Centro
+						Comercial Aves Marías y el Mall Zaratoga, Universidad Ceipa y Hospital Venancio Díaz y un
+						entorno
+						inigualable con una gran reserva natural. <br><br> La primera etapa de esta ciudadela será
+						prato
+						de la Toscana con apartamentos entre 55 y 62 mts2. 2 torres de 23 y 24 pisos
+						1 torre de parqueaderos.
 					</p>
-
-
-					<!-- <p>D 24 pisos de apartamentos, 6 apartamentos por piso: 3 aptos de 75.00, 3 aptos de 70.00, para un total de 144 apartamentos. .</p>
-					<p>	En total el proyecto quedara conformado por 288 apartamentos, además contara con 6 niveles de parqueaderos, 288 parqueaderos privados y 48 parqueaderos visitantes</p> -->
 				</div>
 				<!--zonas -->
 				<div class="main-zone">
@@ -191,13 +215,11 @@
 							<li>Gimnasio</li>
 							<li>Piscina</li>
 							<li>Terraza</li>
-
-
 						</ul>
 						<span class="number">01</span>
 					</div>
 
-					<a href="" class="btn-general">ver galeria</a>
+					<a href="#galeria-apto" class="btn-general">ver galeria</a>
 				</div>
 			</div>
 
@@ -207,7 +229,7 @@
 	</section>
 
 	<!-- Zonas comunes -->
-	<section>
+	<section id="zonas-comunes">
 		<div class="content-zone">
 
 			<div class="content-zone__item">
@@ -249,7 +271,7 @@
 	</section>
 
 	<!-- galleria -->
-	<section class="p-50">
+	<section id="galeria-exterior" class="container" >
 		<div class="main-galery">
 			<div class="title-general">
 				<h3>Galería <span>exterior</span></h3>
@@ -278,12 +300,14 @@
 
 							</div>
 
-						</div>
+						</div>>
 
+						<div class="barra-progress">
+							<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+								<span class="slider__label sr-only">
 
-
-						<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-							<span class="slider__label sr-only">
+							</div>
+							<span class="line"></span>
 						</div>
 					</div>
 					</sectio>
@@ -292,16 +316,20 @@
 
 			</div>
 	</section>
+
 	<!-- planos -->
-	<section class="container">
+	<section id="planos" class="container pt-0">
 		<div class="main-plan row">
 			<div class="col-md-6 centeres">
 				<div class="arro">
-					<span>62 m2</span>
-					<span>55 m2</span>
+					<span>70 m2</span>
+					<span>76 m2</span>
 				</div>
 
 				<div class="main-planos__content">
+					<div class="main-planos__items">
+						<img src="assets/img/planos.png" alt="">
+					</div>
 					<div class="main-planos__items">
 						<img src="assets/img/planos.png" alt="">
 					</div>
@@ -339,13 +367,96 @@
 
 
 	<!-- galey apa -->
-	<section>
+	<section id="galeria-apto">
 
 		<div class="title-general title-general__white title-general-bg">
-			<h3>GALERÍA <span>APARTAMENTO </span></h3>
+			<h3 class="container">GALERÍA <span>APARTAMENTO </span></h3>
+		</div>
+		<div class="container mr-0 pr-0 mt-1">
+
+			<div class="masonry-with-columns">
+
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_7.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_5.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_6.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_5.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_6.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_7.png')">
+							</div>
+						</div>
+					</a>
+
+				</div>
+				<div class="galery-items">
+
+					<a href="#">
+						<div class="main-galery-items__card">
+							<div class="main-galery-items__img"
+								style="background:url('assets/img/image_5.png')">
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
 
-		<div class="">
+		<!-- <div class="">
 			<div class="main-galery__grid">
 				<div class="grid-slider">
 
@@ -390,17 +501,17 @@
 			</div>
 
 
-		</div>
+		</div> -->
 	</section>
 	<!-- ubicacion -->
-	<section class="mt-5 mb-5">
+	<section id="ubicacion" class="">
 
 		<div class="main-ubication">
 			<div class="title-general title-general__white title-general-bg">
 				<h3>Ubicación<span></span></h3>
 			</div>
 			<div class="ubication__text">
-				<h3>AQUÍ NOS PUEDES ENCONTRAR</h3>
+				<h3>AQUÍ NOS PUEDES <span>ENCONTRAR</span></h3>
 
 			</div>
 			<div class="main-ubication__img">
@@ -415,7 +526,7 @@
 	<!-- form -->
 	<section>
 		<div class="main-contact" style="background-image: url(assets/img/image.png);">
-		
+
 			<div class="form__item form__item--contact">
 				<div>
 					<div class="row">
@@ -509,14 +620,14 @@
 			<div class="footer__grid--tem">
 				<h3>Menú</h3>
 				<ul>
-					<li><a href="">Acerca del proyecto</a></li>
-					<li><a href="">Zonas comunes</a></li>
-					<li><a href="">Galería exterior</a></li>
-					<li><a href="">Planos del proyecto</a></li>
+					<li><a href="#acerca">Acerca del proyecto</a></li>
+					<li><a href="#zonas-comunes">Zonas comunes</a></li>
+					<li><a href="#galeria-exterior">Galería exterior</a></li>
+					<li><a href="#plano">Planos del proyecto</a></li>
 					<li><a href="">Galería del apartamento</a></li>
 
-					<li><a href="">Ubicación</a></li>
-					<li><a href="">Formulario</a></li>
+					<li><a href="#galeria-apto">Ubicación</a></li>
+					<li><a href="#form_1">Formulario</a></li>
 				</ul>
 			</div>
 			<div class="footer__grid--tem">
@@ -527,23 +638,25 @@
 				<ul>
 					<div>
 						<h3>Dirección</h3>
-					<li>
-						<a href="">Calle 77 sur Nro 34-65</a>
-					</li>
+						<li>
+							<a href="">Calle 77 sur Nro 34-65</a>
+						</li>
 					</div>
 					<div>
 						<h3>Teléfono</h3>
-					<li>
-						<a href="tel:+ 57 520 27 14<">
-							+ 57 520 27 14</a>
-					</li>
-					</div>
-					<div><h3>Celular</h3>
 						<li>
-							<a href="tel:+ 57 314 877 57 01">
-	
+							<a href="tel:+ 57 520 27 14<">
+								+ 57 520 27 14</a>
+						</li>
+					</div>
+					<div>
+						<h3>Celular</h3>
+						<li>
+							<a href="tel:+573148775701">
+
 								+ 57 314 877 57 01</a>
-						</li></div>
+						</li>
+					</div>
 					<li><a class="footer__grid--tem_btn" href="">descargar brochure</a></li>
 				</ul>
 			</div>
@@ -552,11 +665,9 @@
 
 
 
-
-
 	<div class="btns">
-		<a href=""><img src="assets/img/2.png" alt=""></a>
-		<a href=""><img src="assets/img/1.png" alt=""></a>
+		<a href="tel:+573148775701"><img src="assets/img/2.png" alt=""></a>
+		<a href="#nav"><img src="assets/img/1.png" alt=""></a>
 
 	</div>
 	<script src="assets/js/jquery.min.js"></script>

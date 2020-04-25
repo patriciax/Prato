@@ -1,3 +1,43 @@
+$('.main-banner__content').slick({
+  infinite: true,
+  autoplay: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: true,
+  fade: true,
+  cssEase: "linear",
+  arrows: false,
+  responsive: [{
+    breakpoint: 1200,
+    settings: {
+      arrows: true,
+      infinite: true,
+      dots: false
+    }
+  },
+  {
+    breakpoint: 900,
+    settings: {
+      arrows: true,
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: false,
+      arrows: false,
+      autoplaySpeed: 1000,
+      arrows: true,
+    }
+  }
+  ]
+});
+
+
 $('.main-planos__content').slick({
   infinite: true,
   autoplay: false,
@@ -9,31 +49,31 @@ $('.main-planos__content').slick({
   // cssEase: "linear",
   arrows: false,
   responsive: [{
-      breakpoint: 1200,
-      settings: {
-        arrows: true,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 900,
-      settings: {
-        arrows: true,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        autoplay: false,
-        arrows: false,
-        autoplaySpeed: 1000,
-        arrows: true,
-      }
+    breakpoint: 1200,
+    settings: {
+      arrows: true,
+      infinite: true,
+      dots: false
     }
+  },
+  {
+    breakpoint: 900,
+    settings: {
+      arrows: true,
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: false,
+      arrows: false,
+      autoplaySpeed: 1000,
+      arrows: true,
+    }
+  }
   ]
 });
 
@@ -50,8 +90,8 @@ $(document).ready(function() {
     var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
     
     $progressBar
-      .css('background-size', calc + '% 100%')
-      .attr('aria-valuenow', calc );
+    .css('background-size', calc + '% 100%')
+    .attr('aria-valuenow', calc );
     
     $progressBarLabel.text( calc + '% completed' );
   });
@@ -60,7 +100,34 @@ $(document).ready(function() {
     slide: '.grid-slide',
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 400
+    speed: 400,
+    responsive: [{
+      breakpoint: 1200,
+      settings: {
+        arrows: true,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        arrows: true,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: false,
+        arrows: false,
+        autoplaySpeed: 1000,
+        arrows: true,
+      }
+    }
+    ]
   });  
 });
 
@@ -74,29 +141,29 @@ $('.main-testimonios__content').slick({
   dots: false,
   arrows: true,
   responsive: [{
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-   
-        autoplaySpeed: 1000
-      }
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      infinite: true,
+      dots: true
     }
+  },
+  {
+    breakpoint: 900,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      
+      autoplaySpeed: 1000
+    }
+  }
   ]
 });
